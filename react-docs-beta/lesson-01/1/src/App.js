@@ -18,28 +18,61 @@
 
 //Rendering Lists
 
-const products = [
-  {title : "cabbage", id:1},
-  {title :"apple", id:2},
-  {title:"grapes", isFruit:true, id:3}, 
+// const products = [
+//   {title : "cabbage", id:1},
+//   {title :"apple", id:2},
+//   {title:"grapes", isFruit:true, id:3}, 
 
+// ]
+
+// export default function Shoppinglist() {
+// const listitems = products.map(products=>
+//     <li key={products.id}
+//     style = {{
+//       color:products.isFruit ? "magenta" : "blue"
+//     }}
+//     >
+ 
+//       {products.title}
+//     </li>
+
+//   )
+
+
+//   return (
+//     <ul>{listitems}</ul>
+//   );
+// }
+
+
+
+
+
+// rendering lists
+
+const list =[
+  {id:1, title : "Apple", isFruit:true},
+  {id:2, title : "Microsoft", isFruit: false},
+  {id:3, title : "Mango", isFruit:true},
 ]
 
 export default function Shoppinglist() {
-const listitems = products.map(products=>
-    <li key={products.id}
+
+  const listitems = list.map(list => 
+    <li key = {list.id}
     style = {{
-      color:products.isFruit ? "magenta" : "blue"
+      color: list.isFruit ? "red" : "blue"
     }}
     >
- 
-      {products.title}
+
+      {list.title}
     </li>
-
   )
+    return (
+      <ul>
+        {listitems}
+      </ul>
+    )
 
 
-  return (
-    <ul>{listitems}</ul>
-  );
 }
