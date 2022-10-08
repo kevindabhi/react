@@ -50,29 +50,53 @@
 
 // rendering lists
 
-const list =[
-  {id:1, title : "Apple", isFruit:true},
-  {id:2, title : "Microsoft", isFruit: false},
-  {id:3, title : "Mango", isFruit:true},
-]
+// const list =[
+//   {id:1, title : "Apple", isFruit:true},
+//   {id:2, title : "Microsoft", isFruit: false},
+//   {id:3, title : "Mango", isFruit:true},
+// ]
 
-export default function Shoppinglist() {
+// export default function Shoppinglist () {
+//   const listitems = list.map(list=>
+//     <li key = {list.id}
+     
+//     style = {{
+//       color:list.isFruit ? "blue" : "red"
+//     }}
+   
+//     >
+//     {list.title}
+//     </li>
+//   );
+//   return(
+//   <ul>{listitems}</ul>);
+// }
 
-  const listitems = list.map(list => 
-    <li key = {list.id}
-    style = {{
-      color: list.isFruit ? "red" : "blue"
-    }}
-    >
 
-      {list.title}
-    </li>
+import {useState} from "react";
+
+function MyButton () {
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    setCount(count+1);
+  }
+
+  return (
+    <button onClick={handleClick}>
+      Clicked {count} times.
+    </button>
   )
-    return (
-      <ul>
-        {listitems}
-      </ul>
-    )
+}
 
 
+export default function MyCounter() {
+  return (
+
+    <div>
+      <h1>Counters count seperately</h1>
+      <div><MyButton/></div>
+      <MyButton/>
+    </div>
+  );
 }
