@@ -72,31 +72,31 @@
 //   <ul>{listitems}</ul>);
 // }
 
+import {useState} from "react"
 
-import {useState} from "react";
-
-function MyButton () {
-  const [count, setCount] = useState(0);
-
-  function handleClick() {
-    setCount(count+1);
-  }
-
+function MyButton({ count, onClick }) {
   return (
-    <button onClick={handleClick}>
-      Clicked {count} times.
+    <button onClick={onClick}>
+      Clicked {count} times
     </button>
-  )
+  );
 }
 
 
-export default function MyCounter() {
-  return (
+export default function MyApp () {
 
-    <div>
-      <h1>Counters count seperately</h1>
-      <div><MyButton/></div>
-      <MyButton/>
-    </div>
-  );
+  const [count,setCount] = useState(0)
+
+  function handleClick () {
+      setCount(count+1)
+  }
+
+
+  
+  return (
+    <>
+    <MyButton count={count} onClick={handleClick} />
+    <MyButton count={count} onClick={handleClick} />
+    </>
+  )
 }
