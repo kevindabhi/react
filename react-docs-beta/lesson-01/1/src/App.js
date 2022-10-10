@@ -72,31 +72,45 @@
 //   <ul>{listitems}</ul>);
 // }
 
-import {useState} from "react"
 
-function MyButton({ count, onClick }) {
-  return (
-    <button onClick={onClick}>
-      Clicked {count} times
-    </button>
-  );
-}
+// import {useState} from "react";
+
+// function MyButton ({count, onClick}) {
 
 
-export default function MyApp () {
+//   return (
+//     <button onClick={onClick}>
+//       clicked {count} times
+//     </button>
+//   )
+// }
 
-  const [count,setCount] = useState(0)
 
-  function handleClick () {
-      setCount(count+1)
-  }
+// export default function MyApp() {
+
+//   const [count,stateCount]=useState(0);
+
+//   function HandleClick() {
+//     stateCount(count+1)
+//   }
+
+//   return(
+//     <>
+//     <h1>Click this button</h1>
+//     <MyButton count={count} onClick={HandleClick}/> <br/>
+//     <MyButton count={count} onClick={HandleClick}/> <br/>
+//     </>
+//   )
+// }
 
 
-  
-  return (
-    <>
-    <MyButton count={count} onClick={handleClick} />
-    <MyButton count={count} onClick={handleClick} />
-    </>
-  )
-}
+//Thinking in react
+
+const groceryItems = [
+  { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
+  { category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit" },
+  { category: "Fruits", price: "$2", stocked: false, name: "Passionfruit" },
+  { category: "Vegetables", price: "$2", stocked: true, name: "Spinach" },
+  { category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin" },
+  { category: "Vegetables", price: "$1", stocked: true, name: "Peas" }
+]
