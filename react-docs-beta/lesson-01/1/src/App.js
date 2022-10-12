@@ -5,7 +5,7 @@
 // }
 
 // export default function MyExtendedFunction () {
-  
+
 //   return (
 //    <div>
 //     <h1> Hello </h1>
@@ -32,7 +32,7 @@
 //       color:products.isFruit ? "magenta" : "blue"
 //     }}
 //     >
- 
+
 //       {products.title}
 //     </li>
 
@@ -59,11 +59,11 @@
 // export default function Shoppinglist () {
 //   const listitems = list.map(list=>
 //     <li key = {list.id}
-     
+
 //     style = {{
 //       color:list.isFruit ? "blue" : "red"
 //     }}
-   
+
 //     >
 //     {list.title}
 //     </li>
@@ -84,7 +84,6 @@
 //     </button>
 //   )
 // }
-
 
 // export default function MyApp() {
 
@@ -114,3 +113,5 @@ const groceryItems = [
   { category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin" },
   { category: "Vegetables", price: "$1", stocked: true, name: "Peas" }
 ]
+
+
