@@ -5,7 +5,7 @@
 // }
 
 // export default function MyExtendedFunction () {
-
+  
 //   return (
 //    <div>
 //     <h1> Hello </h1>
@@ -32,7 +32,7 @@
 //       color:products.isFruit ? "magenta" : "blue"
 //     }}
 //     >
-
+ 
 //       {products.title}
 //     </li>
 
@@ -56,17 +56,43 @@ const list =[
   {id:3, title : "Mango", isFruit:true},
 ]
 
-//Thinking in react
+export default function Shoppinglist () {
+  const listitems = list.map(list=>
+    <li key = {list.id}
+    style = {{
+      color:list.isFruit ? "blue" : "red"
+    }}
 
-const groceryItems = [
-  { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
-  { category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit" },
-  { category: "Fruits", price: "$2", stocked: false, name: "Passionfruit" },
-  { category: "Vegetables", price: "$2", stocked: true, name: "Spinach" },
-  { category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin" },
-  { category: "Vegetables", price: "$1", stocked: true, name: "Peas" }
-]
-
+  )
 
 
 }
+
+
+// import {useState} from "react";
+
+// function MyButton () {
+//   const [count, setCount] = useState(0);
+
+//   function handleClick() {
+//     setCount(count+1);
+//   }
+
+//   return (
+//     <button onClick={handleClick}>
+//       Clicked {count} times.
+//     </button>
+//   )
+// }
+
+
+// export default function MyCounter() {
+//   return (
+
+//     <div>
+//       <h1>Counters count seperately</h1>
+//       <MyButton/>
+//       <MyButton/>
+//     </div>
+//   );
+// }
