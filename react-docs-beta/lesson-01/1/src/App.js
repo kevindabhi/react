@@ -49,7 +49,7 @@
 
 
 // rendering lists
-
+/* 
 const list =[
   {id:1, title : "Apple", isFruit:true},
   {id:2, title : "Microsoft", isFruit: false},
@@ -75,4 +75,23 @@ export default function Shoppinglist() {
     )
 
 
+} */
+
+
+//shift + alt + a 
+
+
+
+function MyButton () {
+  function handleClick()
+   {
+    alert ("You Clicked");
+   }
+
+   return (
+    <button onClick = {handleClick}> Click Me </button>
+  );
+
 }
+
+
