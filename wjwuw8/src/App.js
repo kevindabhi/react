@@ -32,6 +32,5 @@ export default function Board() {
         <Square />
       </div>
     </div>
-
   );
 }
