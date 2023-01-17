@@ -50,23 +50,29 @@
 
 // rendering lists
 
-const list =[
-  {id:1, title : "Apple", isFruit:true},
-  {id:2, title : "Microsoft", isFruit: false},
-  {id:3, title : "Mango", isFruit:true},
-]
+// const list =[
+//   {id:1, title : "Apple", isFruit:true},
+//   {id:2, title : "Microsoft", isFruit: false},
+//   {id:3, title : "Mango", isFruit:true},
+// ]
 
-//Thinking in react
+// //Thinking in react
 
-const groceryItems = [
-  { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
-  { category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit" },
-  { category: "Fruits", price: "$2", stocked: false, name: "Passionfruit" },
-  { category: "Vegetables", price: "$2", stocked: true, name: "Spinach" },
-  { category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin" },
-  { category: "Vegetables", price: "$1", stocked: true, name: "Peas" }
-]
+// const groceryItems = [
+//   { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
+//   { category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit" },
+//   { category: "Fruits", price: "$2", stocked: false, name: "Passionfruit" },
+//   { category: "Vegetables", price: "$2", stocked: true, name: "Spinach" },
+//   { category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin" },
+//   { category: "Vegetables", price: "$1", stocked: true, name: "Peas" }
+// ]
 
 
 
-}
+// }
+
+
+let arr = [10,20,30]
+counter = 0;
+let answer = arr.reduce((accumulator, value)=>  value+accumulator , counter);
+console.log(answer)
